@@ -7,6 +7,10 @@ This project focuses on optimizing airport gate assignments using a Mixed-Intege
 
 The model was tested with realistic flight schedules at the apron of Ankara Esenboga Airport and demonstrated robustness and effectiveness in achieving its goals.
 
+
+<img src="figs/airport_layout.jpg" alt="Gate layout of apron 4 at Asenboga Aiport" width="700"/>
+
+
 ## Features
 - Joint optimization of multiple objectives for operational efficiency and passenger comfort.
 - Mathematical model implemented using the Gurobi optimization package in Python.
@@ -23,6 +27,13 @@ The model was tested with realistic flight schedules at the apron of Ankara Esen
 - `data_processing.py`: Generates flight schedules and preprocesses input data.
 - `utils.py`: Contains helper functions for visualization and data management.
 - `config.yaml`: Configurable parameters for the optimization problems.
+
+### Results
+- The project verified the correctness of the mathematical model through validation tests.
+- Conducted sensitivity analysis for robustness against changes in key parameters.
+- Optimized real-world flight schedules, demonstrating the model's practical applicability as shown in the example schedule consisting of 25 flights.
+
+![Optimized flight schedule for the real-world test case.](figs/final_flight.jpg)
 
 ### Acknowledgments
 - Developed as part of the AE4441-16 Operations Optimization course at TU Delft.
