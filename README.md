@@ -10,6 +10,8 @@ The model was tested with realistic flight schedules at the apron of Ankara Esen
 
 <img src="figs/airport_layout.jpg" alt="Gate layout of apron 4 at Asenboga Aiport" width="700"/>
 
+Full description of the project can be found in the provided report.pdf file.
+
 
 ### Features
 - Joint optimization of multiple objectives for operational efficiency and passenger comfort.
