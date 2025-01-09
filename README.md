@@ -11,10 +11,35 @@ The model was tested with realistic flight schedules at the apron of Ankara Esen
 <img src="figs/airport_layout.jpg" alt="Gate layout of apron 4 at Asenboga Aiport" width="700"/>
 
 
-## Features
+### Features
 - Joint optimization of multiple objectives for operational efficiency and passenger comfort.
 - Mathematical model implemented using the Gurobi optimization package in Python.
 - Includes sensitivity analysis for parameters such as buffer times, taxi speeds, and objective weighting.
+
+### Investigated Parameters
+
+##### Flight Parameters
+- Flight Arrival Time
+- Aircraft Performance Category
+  - Narrow-Body 
+  - Wide-Body 
+- Flight Operational Type 
+  - Domestic
+  - International
+- Speed of the aircraft during taxiing
+- Rate of fuel consumption per second, based on the aircraft’s performance category
+- Average time an aircraft spends at the gate, based on its performance category
+- Additional time added to account for flight delays
+
+##### Gate Parameters
+- The distance from the gate to the runway.
+- Aircraft performance compatibility, indicating whether a gate can service aircraft of a certain performance category.
+- Operational compatibility, indicating whether a gate can service aircraft of a certain operational type.
+
+##### Baggage Carousel Parameters
+- Compatibility with Gate, indicating if a carousel is compatible with a certain gate.
+- Distance from baggage carousel to gate.
+
 
 ### Prerequisites
 - Python 3.x
