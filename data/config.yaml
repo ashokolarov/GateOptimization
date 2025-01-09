@@ -1,0 +1,27 @@
+### Informational
+identifier: Final Results 
+
+### Data related
+data_file: data/data.xlsx            # data file path
+
+### Flight generation
+num_flights: 25                      # number of flights to generate
+traffic_hours: [9:00:00, 14:00:00]   # traffic hours
+domestic_to_total_ratio: 0.8         # ratio of domestic flights to total flights
+narrow_to_total_ratio: 0.9           # ratio of narrow body aircraft to total aircraft
+
+### Model related
+taxi_speed: 8.0                      # aircraft taxi speed [m/s]
+fuel_consumption: [0.167, 0.388]     # fuel consumption, per performance type 
+gate_occupancy: [80, 100]            # gate occupancy time in minutes, per performance type
+buffer_time: 30                      # buffer time in minutes
+
+### Nadir points
+d_min: 0
+d_max: 0
+f_min: 0
+f_max: 0
+
+### Output related
+output_path: results                 # output path
+plot_flight_gate_verification: False # plot gate verification
